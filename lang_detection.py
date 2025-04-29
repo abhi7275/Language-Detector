@@ -208,7 +208,7 @@ def preprocess_file(file_name):
 
 # Task 8: Test the Model --- Implement the function
 def test_language(file_name):
-    directory = "/Language-Detector/nGrams"
+    directory =os.path.join(os.path.dirname(__file__), "nGrams")
     if not os.path.exists(directory):
         raise FileNotFoundError(f"The directory {directory} does not exist. Please ensure it is created and populated with the necessary files.")
 
